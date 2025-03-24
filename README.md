@@ -4,19 +4,27 @@ A quick and easy setup for running Jupyter notebooks in a Dockerized environment
 
 ## Getting Started
 
-Build the the image for the Jupyter Notebook server:
-
-```bash
-docker compose build
-```
-
 Start the Jupyter Notebook server:
 
 ```bash
-docker compose up
+docker compose up -d
 ```
 
 After running this command, the Jupyter Notebook server should be accessible at `http://localhost:8888`.
+
+## Usage Options
+
+You can work with Jupyter notebooks in different ways:
+
+1. **Connect via Browser:**
+   - Open your browser and go to `http://localhost:8888`.
+   - Use Jupyter Notebook's built-in interface to create and manage notebooks.
+
+2. **Use VS Code with Jupyter Extension:**
+   - Install the [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) extension in VS Code.
+   - Open VS Code and go to the Jupyter extension settings.
+   - Select `localhost:8888` as the Jupyter server to connect to your running instance.
+   - Open and edit notebooks directly from VS Code.
 
 ## Directory Structure
 
